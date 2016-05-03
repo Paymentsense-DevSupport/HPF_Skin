@@ -1,0 +1,524 @@
+/*------------------------------------------------*/
+/* HPF Specific
+/*------------------------------------------------*/
+
+/*select {
+    padding: 5px;
+    width: 178px;
+    max-width: 178px;
+}
+textarea {
+    height: 168px;
+}
+input,
+textarea,
+{
+margin-bottom: 5px;
+padding: 5px;
+width: 168px;
+max-width: 168px;
+}*/
+
+#contentOutterWrapper
+{
+  width: 100%;
+  margin-top: 140px;
+}
+#contentInnerWrapper
+{
+    width: 100%;
+}
+#SecurePaymentMessage.box
+{
+	padding: 10px 20px;
+}
+#SecurePaymentMessage h1
+{
+	text-align: center;
+}
+#SecurePaymentMessage p
+{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.ContentRight
+{
+  margin-bottom: 1.25rem;
+  right: 0;
+  width: auto;
+}
+.ContentBodyText
+{
+  width: auto !important;
+  margin-bottom: 20px;
+}
+
+#ContentPlaceHolder_pnFormVariableStringPanel .FormInput {
+  float: none;
+}
+
+.imgLarge
+{
+  width: 20%;
+}
+.imgSmall
+{
+  width: 15%;
+}
+.headerSecureMessage
+{
+  width: 30%;
+}
+
+/* Responsive */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contentPane, #SecurePaymentMessage, #siteHeader {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#contentPane:before, #SecurePaymentMessage:before, #siteHeader:before, #contentPane:after, #SecurePaymentMessage:after, #siteHeader:after {
+  content: " ";
+  display: table;
+}
+#contentPane:after, #SecurePaymentMessage:after, #siteHeader:after {
+  clear: both;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.col-xs-24, #logo, #siteHeader div.paneContactNumber, .ErrorMessage, .FormErrorMessage, .WarningMessage, .InfoMessage, .SuccessMessage, .col-sm-24, .col-md-24, .FormRequiredDescription, .col-lg-24, .col-xs-23, .col-sm-23, .col-md-23, .col-lg-23, .col-xs-22, .col-sm-22, .col-md-22, .col-lg-22, .col-xs-21, .col-sm-21, .col-md-21, .col-lg-21, .col-xs-20, .col-sm-20, .col-md-20, .col-lg-20, .col-xs-19, .col-sm-19, .col-md-19, .col-lg-19, .col-xs-18, .FormInput, .FormInputTextOnly, .FormSubmit, .col-sm-18, .col-md-18, .col-lg-18, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-12, .col-sm-12, .col-md-12, #logo, #siteHeader div.paneContactNumber, .col-lg-12, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-10, .col-sm-10, .FormLabel, .FormInput, .FormInputTextOnly, .FormSubmit, .col-md-10, .col-lg-10, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
+  position: relative;
+  min-height: 1px;
+}
+
+.col-xs-24, #logo, #siteHeader div.paneContactNumber, .ErrorMessage, .FormErrorMessage, .WarningMessage, .InfoMessage, .SuccessMessage, .col-xs-23, .col-xs-22, .col-xs-21, .col-xs-20, .col-xs-19, .col-xs-18, .FormInput, .FormInputTextOnly, .FormSubmit, .col-xs-17, .col-xs-16, .col-xs-15, .col-xs-14, .col-xs-13, .col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1 {
+  float: left;
+}
+
+.col-xs-6 {
+  width: 25%;
+}
+
+.col-xs-12 {
+  width: 50%;
+}
+
+.col-xs-24, #logo, #siteHeader div.paneContactNumber {
+  width: 100%;
+}
+
+.ErrorMessage, .FormErrorMessage, .WarningMessage, .InfoMessage, .SuccessMessage {
+  width: 75%;
+  margin: 20px 12.5%;
+}
+
+.clearfix:before, .FormRequiredDescription:before, .ContentRight > div:before, .clearfix:after, .FormRequiredDescription:after, .ContentRight > div:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after, .FormRequiredDescription:after, .ContentRight > div:after {
+  clear: both;
+}
+
+#RequiredFieldsDescription {
+  float: right;
+}
+
+.DESVALRequiredFieldMarker img {
+  margin-left: 6px;
+}
+
+.SecureImages div {
+  text-align: center;
+}
+
+
+
+.form-control, .FormInput input[type="text"], .FormInputTextOnly span, .InputTextFieldRegister, #ExpiryDateMonthList, #ExpiryDateYearList, #CountryList {
+  border-radius: 0;
+  float: left;
+  width: 100%;
+}
+
+.InputTextFieldSmall {
+  max-width: 50px;
+}
+
+.InputDropDownListSmall {
+  max-width: 62px;
+}
+
+#InstructionsHelpButton {
+  margin-left: 4px;
+  position: absolute;
+}
+
+#contentPane, #SecurePaymentMessage {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.02);
+  padding: 10px;
+  min-width: 300px;
+}
+
+#siteHeader {
+  max-width: 980px;
+  width: 100% !important;
+  padding: 10px;
+  min-width: 310px;
+}
+
+#FormPaymentForm {
+  margin: 0 auto;
+}
+
+.FormValidationLabel {
+  float: left;
+  margin-top: 1px;
+}
+
+.FormItem {
+  max-width: 700px;
+  width: 100%;
+}
+
+#ExpiryDateMonthList, #ExpiryDateYearList {
+  height: 2rem;
+  width: 62px;
+}
+
+#ExpiryDateMonthList {
+  margin-right: 0.5rem;
+}
+
+.FormSubmit {
+  margin-left: 29.16667%;
+}
+
+#siteWrapper {
+  margin: 0 auto 20px;
+  max-width: 980px;
+  width: auto;
+}
+
+#headerShadow {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+}
+
+#logo {
+  margin: 0;
+  text-align: left;
+}
+
+#logoLink {
+  display: block;
+  height: 80px;
+  width: 230px;
+}
+
+input[type="submit"]:active {
+  background-color: #4D5B9A;
+}
+
+.FormInput #PayByLinkAmount {
+  height: 2rem;
+  margin-right: 0.5rem;
+  width: 80px;
+}
+
+#CurrencyList {
+  height: 2rem;
+  width: 93px;
+}
+
+#OrderDetailsHeader + div .FormInput {
+  width: auto;
+}
+
+#OrderDetailsHeader + div .FormInput .FormValidationLabel {
+  float: left;
+}
+
+#CardDetailsSection > div:first-child +div +div +div +div +div .FormInput {
+  width: 78px;
+}
+
+#CardDetailsSection > div:first-child +div +div +div +div .FormInput, #CardDetailsSection > div:first-child +div +div +div .FormInput {
+  width: auto;
+}
+
+#CardDetailsSection > div:first-child + div + div + div + div + div .FormValidationLabel, #CardDetailsSection > div:first-child + div + div + div + div .FormValidationLabel, #CardDetailsSection > div:first-child + div + div + div .FormValidationLabel {
+  float: left;
+}
+
+.DESVALErrorText {
+  float: left;
+  display: block;
+  height: 15px;
+}
+.DESVALRequiredFieldMarker {
+  margin-right: 3px;
+  float: left;
+}
+
+/* HACK - this span doesn't behave like the others */
+.DESVALErrorText span {
+  display: none;
+}
+
+.FormValidationText, .FormOptionalValidationText, .NarrowFormValidationText {
+  padding-left: 0;
+}
+
+@media screen and (min-width: 699px) {
+  #FormItem {
+    width: 700px;
+  }
+}
+
+@media (min-width: 721px) {
+  .col-sm-24, .col-sm-23, .col-sm-22, .col-sm-21, .col-sm-20, .col-sm-19, .col-sm-18, .col-sm-17, .col-sm-16, .col-sm-15, .col-sm-14, .col-sm-13, .col-sm-12, .col-sm-11, .col-sm-10, .FormLabel, .FormInput, .FormInputTextOnly, .FormSubmit, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1 {
+    float: left;
+  }
+
+  .col-sm-4 {
+    width: 16.66667%;
+  }
+
+  .col-sm-8 {
+    width: 33.33333%;
+  }
+
+  .col-sm-10, .FormLabel, .FormInput, .FormInputTextOnly, .FormSubmit {
+    width: 41.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-24, .FormRequiredDescription, .col-md-23, .col-md-22, .col-md-21, .col-md-20, .col-md-19, .col-md-18, .col-md-17, .col-md-16, .col-md-15, .col-md-14, .col-md-13, .col-md-12, #logo, #siteHeader div.paneContactNumber, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1 {
+    float: left;
+  }
+
+  .col-md-3 {
+    width: 12.5%;
+  }
+
+  .col-md-4 {
+    width: 16.66667%;
+  }
+
+  .col-md-10 {
+    width: 41.66667%;
+  }
+
+  .col-md-12, #logo, #siteHeader div.paneContactNumber {
+    width: 50%;
+  }
+
+  .col-md-24, .FormRequiredDescription {
+    width: 100%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 991px) {
+  .hidden-sm,
+  tr.hidden-sm,
+  th.hidden-sm,
+  td.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md,
+  tr.hidden-md,
+  th.hidden-md,
+  td.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg,
+  tr.hidden-lg,
+  th.hidden-lg,
+  td.hidden-lg {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #siteWrapper {
+    max-width: none;
+  }
+  #contentOutterWrapper {
+    padding: 0 10px;
+  }
+  #logo {
+    text-align: center;
+  }
+  #logoLink {
+    height: 60px;
+    width: 173px;
+  }
+  #headerWrapper.box {
+    position: relative;
+    border: 0;
+  }
+  #headerShadow {
+    position: relative;
+    top: 2px;
+  }
+  #contentOutterWrapper {
+    margin-top: 20px;
+  }
+  #siteHeader div.paneContactNumber {
+    text-align: center;
+  }
+  #siteHeader {
+    padding: 10px 10px 0 10px;
+  }
+  #siteHeader div.paneContactNumber h3 {
+    font-size: 2rem;
+  }
+  #siteHeader div.paneContactNumber {
+    padding: 0;
+  }
+  #footer {
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  body, button, input, select, textarea, p, small, blockquote, blockquote p, blockquote cite, .Normal, .Help, input[type="text"], select, textarea, input[type="email"], input[type="search"], input[type="password"] {
+      font-size: 1.2rem;
+  }
+  .hidden-xs,
+  tr.hidden-xs,
+  th.hidden-xs,
+  td.hidden-xs {
+    display: none !important;
+  }
+  .FormSubmit {
+    text-align: center;
+  }
+  #MerchantNameFormLabel, #AmountFormLabel, #OrderIDFormLabel, #OrderDescriptionFormLabel .FormLabel {
+    display: none;
+  }
+  #AmountFormLabel, #OrderIDFormLabel, #OrderDescriptionFormLabel .FormLabel, .FormInputTextOnly {
+    width: 75%;
+    margin: 0 12.5% 0 12.5%;
+  }
+  #AmountFormLabel {
+    margin-top: 4px;
+  }
+  .ContentHeader, .FormValidationLabel, .FormLabel, .FormInput, .FormItem .FormSubmit {
+    margin: 0 0 0 12.5%;
+    float: left;
+    width: 75%;
+  }
+  .ContentHeader {
+    font-size: 1.5rem;
+    line-height: normal;
+    margin-bottom: 0.6rem;
+  }
+  .FormLabel, .NarrowFormLabel, .FormLabelExtraDescription {
+    text-align: left;
+  }
+  #Address2FormLabel, #Address3FormLabel, #Address4FormLabel {
+    height: 0;
+  }
+  .FormInputTextOnly, .FormInputText, .FormItemExtraDescription {
+    padding: 0;
+  }
+  .FormValidationLabel span {
+    font-size: 0.714rem;
+    display: block;
+    height: 0.914rem;
+  }
+  .FormValidationText img {
+    margin-left: -5px;
+  }
+  .FormValidationText {
+    width: 8.333%;
+  }
+  .FormInput #PayByLinkAmount, #CurrencyList {
+    height: 2rem;
+  }
+  .DESVALErrorText, .DESVALRequiredFieldMarker +span {
+    padding-top: 0.2rem;
+  }
+  #InstructionsHelpButton {
+    margin-top: 3px;
+  }
+  input[type="submit"] {
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  #footer p {
+    float: none;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #contentPane, #SecurePaymentMessage, #siteHeader {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .FormLabel {
+    width: 87.5%;
+  }
+  .FormValidationText {
+    height: 24px;
+    width: 16.6667%;
+  }
+  .ErrorMessage, .FormErrorMessage, .WarningMessage, .InfoMessage, .SuccessMessage {
+    padding: 20px 20px 20px 70px;
+    width: 95%;
+    margin: 20px 2.5%;
+  }
+  #AmountFormLabel, #OrderIDFormLabel, #OrderDescriptionFormLabel .FormLabel, .FormInputTextOnly {
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+  }
+  .ContentHeader, .FormValidationLabel, .FormLabel, .FormInput, .FormItem .FormSubmit {
+    margin: 0 0 0 2.5%;
+    width: 95%;
+  }
+  .ContentHeader {
+    margin-bottom: 0.6rem;
+  }
+  .FormInput, .FormItem .FormSubmit {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #SecurePaymentMessage p {
+    font-size: 0.85rem;
+  }
+}

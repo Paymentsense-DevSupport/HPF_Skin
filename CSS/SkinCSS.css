@@ -1,0 +1,292 @@
+
+#BodyWrap
+{
+	width:700px;
+	margin:auto;
+    box-shadow: 5px 5px 5px #888888;
+    border:solid 1px #69737c;
+}
+
+#SecureBanner
+{
+	clear:both;
+	width:700px;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	background-position: center center;
+    border:solid 1px #69737c;
+	height:66px;
+}
+
+#Header
+{
+	clear:both;
+	width:700px;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	background-position: center center;
+    border:solid 1px #69737c;
+	height:57px;
+}
+
+#BottomBanner
+{
+	clear:both;
+	width:100%;
+	height:58px;
+    border:solid 1px #69737c;
+	
+}
+
+#BottomBanner
+{
+	width:700px;
+	text-align:right;
+	background-repeat:no-repeat;
+	background-color:#FFF;
+    border:solid 1px #69737c;
+	padding:0px;
+	font-size:15px;
+	color:#fff;
+	font-weight:bold;
+	height:50px;
+}
+
+
+
+
+.StandardCentre
+{
+	clear:both;
+	text-align:center;
+}
+
+#MSC, #VBV
+{
+	width:65px;
+}
+
+
+#SecureMessage
+{
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#0a0;
+}
+
+body
+ {
+    color:#666;
+}
+
+.ContentHeader
+{
+    background-image:none;
+    font-size:22px;
+    font-weight:bold;
+    color:##2E2E2E;
+}
+
+.ContentBodyText
+{
+    color:#666;
+}
+
+.FormLabel
+{
+    color:#888;
+}
+		
+#lbValidationHelper 
+{
+	margin-left: 60px;
+}
+	
+.ErrorMessage, .FormErrorMessage
+{
+    background-image: url('../Images/error.jpg');
+}		
+	
+.SuccessMessage
+{
+    background-image: url('../Images/success.jpg');   	
+}			
+    
+.WarningMessage
+{
+    background-image: url('../Images/warning.jpg');
+}			
+	
+.InfoMessage
+{
+    background-image: url('../Images/info.jpg');	
+}	
+
+	
+#OrderDetailsHeader
+{
+   	width: 345px;
+    height: 49px;
+	Background-image:url('../Images/OrderIcon.jpg');
+	background-position:center left;
+    background-size:45px 49px;
+	margin-left: 40px;
+    padding-left: 60px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+#CardDetailsHeader
+{
+    width: 345px;
+    height: 49px;
+	Background-image:url('../Images/Card.jpg');
+	background-position:center left;
+	background-size:45px 49px;
+	margin-left: 40px;
+    padding-left: 60px;
+	vertical-align:text-bottom;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+
+#CustomerDetailsHeader
+{
+    padding-top: 20px;
+	width: 345px;
+    height: 49px;
+	Background-image:url('../Images/Customer.jpg');
+	background-size:45px 49px;
+	margin-top: 5px;
+	margin-left: 40px;
+    padding-left: 60px;
+    background-position:center left;
+}
+
+#mobileHeaderImage, #mobileSecureImage, #mobileFooterImage
+{
+	display: none;
+}
+
+@media only screen and (max-width: 735px) {
+	#BodyWrap
+	{
+		width:100%;
+		margin:auto;
+		box-shadow: 5px 5px 5px #888888;
+		border:solid 1px #69737c;
+		min-width: 150px;
+	}
+
+	#SecureBanner
+	{
+		clear:both;
+		width:100%;
+		background-repeat:no-repeat;
+		background-color:#fff;
+		background-position: center center;
+		border:solid 1px #69737c;
+		height:64px;
+	}
+
+	#Header
+	{
+		clear:both;
+		width:100%;
+		background-repeat:no-repeat;
+		background-color:#fff;
+		background-position: center center;
+		border:solid 1px #69737c;
+		height:57px;
+	}
+
+	#BottomBanner
+	{
+		clear:both;
+		width:100%;
+		height:58px;
+		border:solid 1px #69737c;
+		
+	}
+
+	#BottomBanner
+	{
+		width:100%;
+		text-align:right;
+		background-repeat:no-repeat;
+		background-color:#FFF;
+		border:solid 1px #69737c;
+		padding:0px;
+		font-size:15px;
+		color:#fff;
+		font-weight:bold;
+		height:50px;
+	}
+
+	
+	
+	#OrderDetailsHeader
+	{
+   		width: 345px;
+	    	height: 49px;
+		Background-image:url('../Images/OrderIcon.jpg');
+		background-position:center left;
+	    	background-size:45px 49px;
+		margin-left: 40px;
+	    	padding-left: 60px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+
+
+	#CardDetailsHeader
+	{
+		Background-image:url('../Images/Card.jpg');
+		background-position:center left;	
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+	#desktopFooterImage, #desktopSecureImage, #desktopHeaderImage
+	{
+		display: none;
+	}
+	
+	#mobileHeaderImage, #mobileSecureImage, #mobileFooterImage
+	{
+		display:inline;
+		min-width: 150px;
+	}
+	
+	#SecureBanner
+	{
+		height:150px;
+		min-width: 150px;
+	}
+	#BottomBanner, #Header
+	{
+		height:70px;
+		min-width: 150px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#SecureBanner
+	{
+		height:110px;
+	}
+	#BottomBanner, #Header
+	{
+		height:64px;
+	}
+}
+
+#FormPaymentForm 
+{
+	margin: 0 auto;
+  	background-color: #f9f9f9;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @@DefaultStyleFiles@@
+
+    <!-- ANY REFERENCES TO YOUR OWN CSS FILES OR ANY STYLE TAGS CONTAINING CSS RULES -->
+    <!-- MUST GO **AFTER** THIS COMMENT -->
+    <title>Secure Payment Form</title>
+    <link id="Link3" href="CSS/StyleSheet.css" rel="stylesheet" type="text/css" />
+	<link id="Link3" href="CSS/SkinCSS.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="Javascript/respond.min.js"></script>
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+</head>
+<!-- DO NOT REMOVE THE ONLOAD ATTRIBUTE FROM THE BODY TAG -->
+<!-- YOU ALSO MUST **NOT** DEFINE THE JAVASCRIPT FUNCTION BEING CALLED -->
+<body onload="ApplicationLoadHandler();">
+    <!-- DO NOT REMOVE THESE 2 DIVS UNLESS YOU DON'T WANT THE AJAX PROGRESS PANEL -->
+    <div id="AJAXUpdatePanel_Panel" style="display:none;"></div>
+    <div id="AJAXUpdatePanel_Spinner" style="display:none;"></div>    
+    
+    <div id="BodyWrap">  
+        <div id="Header">
+			<img id="desktopHeaderImage" src="Images/desktopHeader.jpg" alt="Secured" height="100%" width="100%"/>
+			<img id="mobileHeaderImage" src="Images/mobileHeader.png" alt="Secured" height="100%" width="100%"/>
+    	</div>
+	
+    	<div id="SecureBanner">
+            <img id="desktopSecureImage"src="Images/desktopSecureBar.jpg" alt="Secured" height="100%" width="100%"/>
+			<img id="mobileSecureImage" src="Images/mobileSecureBar.jpg" alt="Secured" height="100%" width="100%"/>
+        </div>
+    
+    	<div id="FullContent">
+    		@@Content@@
+        </div>
+        
+		<div id="BottomBanner">
+			<img id="desktopFooterImage" src="Images/desktopFooter.jpg" alt="Secured" height="100%" width="100%"/>
+			<img id="mobileFooterImage" src="Images/mobileFooter.png" alt="Secured" height="100%" width="100%"/>
+        </div>
+    
+	</div>
+</body>
+</html>
